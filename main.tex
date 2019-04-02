@@ -1,7 +1,8 @@
 %%% Research Diary - Entry
 %%% Template by Mikhail Klassen, April 2013
 %%% 
-\documentclass[11pt,letterpaper]{article}
+\documentclass[ceqn,usenatbib]{mnras}
+%%% \documentclass[ceqn,usenatbib]
 
 \newcommand{\workingDate}{\textsc{2013 $|$ January $|$ 01}}
 \newcommand{\userName}{Your Name}
@@ -9,6 +10,8 @@
 \usepackage{researchdiary_png}
 % To add your univeristy logo to the upper right, simply
 % upload a file named "logo.png" using the files menu above.
+
+
 
 \begin{document}
 \univlogo
@@ -57,6 +60,17 @@ The $\omega$ necessary to produce a $\beta = 0.05$ would be
 using $\rho_0 = \rho_c = 1.22\times10^{-17}$.
 
 After testing this, however, I found that the rotation was much too fast. Perhaps using $\rho_0 = \rho_c$ was not a very good assumption at all, since $\rho_c$ is orders of magnitude larger than the average. I wrote a little Python script that sums up all the mass inside the outer radius and divides it by the total volume, defined by the outer radius. In this case, for an outer radius of $5.97402\times 10^{18}$ cm and about 1000 $\Msun$, we get an average density of $2.96415\times 10^{-21}$ g/cm$^3$, which gives us $\omega = 1.114 \times 10^{-14}$.
+
+\input{Week0Report.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
+% The best way to enter references is to use BibTeX:
+\bibliographystyle{mnras}
+%\bibliography{example} % if your bibtex file is called example.bib
+\bibliography{JPbib2019} 
+
 
 
 \end{document}
